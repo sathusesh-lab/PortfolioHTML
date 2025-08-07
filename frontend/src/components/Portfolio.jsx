@@ -25,7 +25,31 @@ const Portfolio = () => {
       case 'recent':
         return (
           <div className="space-y-6">
-            <h2 className="text-2xl font-light text-black mb-6">Recent Experience</h2>
+            {/* Header with Recent Experience title and CSPO certification */}
+            <div className="flex items-center justify-between mb-6">
+              <h2 className="text-2xl font-light text-black">Recent Experience</h2>
+              
+              {/* CSPO Certification Badge */}
+              <a 
+                href="https://bcert.me/sxkvkhwur" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block hover:scale-105 transition-transform duration-300"
+              >
+                <div className="flex items-center bg-white border-2 border-orange-500 rounded-lg p-3 shadow-lg hover:shadow-xl">
+                  <img 
+                    src="https://customer-assets.emergentagent.com/job_portfolio-bhuvana/artifacts/92g8efi6_badge-7224%20%282%29.png" 
+                    alt="CSPO Certification" 
+                    className="w-12 h-12 mr-3"
+                  />
+                  <div>
+                    <h3 className="font-semibold text-gray-800 text-sm">Certified Scrum Product Owner</h3>
+                    <p className="text-xs text-gray-600">Scrum Alliance Certification</p>
+                    <p className="text-xs text-orange-500 mt-1">Click to verify →</p>
+                  </div>
+                </div>
+              </a>
+            </div>
             
             {/* Capillary Technologies */}
             <div className="bg-gradient-to-r from-orange-50 to-white border border-orange-200 rounded-xl p-4 hover:shadow-lg transition-shadow">
