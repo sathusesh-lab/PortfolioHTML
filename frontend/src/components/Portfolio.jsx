@@ -179,6 +179,28 @@ const Portfolio = () => {
                 backgroundImage: `url('https://customer-assets.emergentagent.com/job_portfolio-bhuvana/artifacts/q03w0t9q_1619607869770.jpeg')`
               }}
             >
+              {/* CSPO Certification Badge - Overlapping on background */}
+              <div className="absolute -bottom-6 right-8 z-10">
+                <a 
+                  href="https://bcert.me/sxkvkhwur" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-block hover:scale-105 transition-transform duration-300"
+                >
+                  <div className="flex items-center bg-white border-2 border-orange-500 rounded-lg p-3 shadow-lg hover:shadow-xl">
+                    <img 
+                      src="https://customer-assets.emergentagent.com/job_portfolio-bhuvana/artifacts/92g8efi6_badge-7224%20%282%29.png" 
+                      alt="CSPO Certification" 
+                      className="w-12 h-12 mr-3"
+                    />
+                    <div>
+                      <h3 className="font-semibold text-gray-800 text-sm">Certified Scrum Product Owner</h3>
+                      <p className="text-xs text-gray-600">Scrum Alliance Certification</p>
+                      <p className="text-xs text-orange-500 mt-1">Click to verify →</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
 
             {/* Main Content - Condensed Layout */}
