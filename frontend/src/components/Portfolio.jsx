@@ -207,8 +207,51 @@ const Portfolio = () => {
 
             {/* Main Content - Full Width */}
             <div className="w-full bg-white">
-              <div className="px-8 py-8">
-                {renderProductManagementContent()}
+              <div className="flex px-8 py-8">
+                
+                {/* Left Sidebar Navigation */}
+                <div className="w-1/4 pr-8">
+                  <div className="bg-gray-50 rounded-xl p-6 sticky top-24">
+                    <h3 className="text-lg font-medium text-black mb-6">Product Management</h3>
+                    <nav className="space-y-3">
+                      <button
+                        onClick={() => setActiveProductSection('recent')}
+                        className={`w-full text-left px-4 py-3 rounded-lg transition-all text-sm ${
+                          activeProductSection === 'recent'
+                            ? 'bg-orange-500 text-white shadow-md'
+                            : 'text-gray-600 hover:text-black hover:bg-white hover:shadow-sm'
+                        }`}
+                      >
+                        Recent Experience
+                      </button>
+                      <button
+                        onClick={() => setActiveProductSection('entrepreneurial')}
+                        className={`w-full text-left px-4 py-3 rounded-lg transition-all text-sm ${
+                          activeProductSection === 'entrepreneurial'
+                            ? 'bg-orange-500 text-white shadow-md'
+                            : 'text-gray-600 hover:text-black hover:bg-white hover:shadow-sm'
+                        }`}
+                      >
+                        Entrepreneurial Experience
+                      </button>
+                      <button
+                        onClick={() => setActiveProductSection('learning')}
+                        className={`w-full text-left px-4 py-3 rounded-lg transition-all text-sm ${
+                          activeProductSection === 'learning'
+                            ? 'bg-orange-500 text-white shadow-md'
+                            : 'text-gray-600 hover:text-black hover:bg-white hover:shadow-sm'
+                        }`}
+                      >
+                        Practice / Learning
+                      </button>
+                    </nav>
+                  </div>
+                </div>
+
+                {/* Right Content Area */}
+                <div className="w-3/4 pl-8">
+                  {renderProductManagementContent()}
+                </div>
               </div>
             </div>
           </div>
