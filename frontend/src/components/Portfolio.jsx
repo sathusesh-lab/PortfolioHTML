@@ -132,22 +132,22 @@ const Portfolio = () => {
       </div>
 
       {/* Main Content Area */}
-      <div className="flex min-h-screen pt-8">
+      <div className="flex min-h-screen">
         
-        {/* Left Side - Profile Image Only */}
-        <div className="w-1/2 p-8">
-          <div className="h-full flex items-center justify-center">
+        {/* Left Side - Profile Image Only - 30% */}
+        <div className="w-[30%]">
+          <div className="h-screen">
             <img 
               src={profileData.profileImage}
               alt="Bhuvaneshwari Seshachalam"
-              className="w-80 h-96 object-cover rounded-2xl shadow-lg"
+              className="w-full h-full object-cover"
             />
           </div>
         </div>
 
-        {/* Right Side - Main Content */}
-        <div className="w-1/2 bg-white p-12 flex flex-col justify-center">
-          <div className="max-w-2xl">
+        {/* Right Side - Main Content - 70% */}
+        <div className="w-[70%] bg-white p-12 flex flex-col justify-center">
+          <div className="max-w-4xl mx-auto">
             
             {/* Hero Content */}
             <div className="mb-12">
