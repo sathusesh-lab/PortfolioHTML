@@ -108,60 +108,60 @@ const Portfolio = () => {
               </div>
               
               {/* Navigation Tabs */}
-              <nav className="grid grid-cols-6 gap-1">
+              <nav className="flex space-x-4 flex-wrap">
                 <button
                   onClick={() => handleTabClick('about')}
-                  className={`px-3 py-3 text-xs font-semibold tracking-wider transition-all text-center ${
+                  className={`px-4 py-2 text-sm font-medium transition-all rounded-lg ${
                     activeTab === 'about' 
-                      ? 'bg-black text-white rounded-lg' 
-                      : 'text-gray-600 hover:text-black hover:bg-gray-100 rounded-lg'
+                      ? 'bg-black text-white' 
+                      : 'text-gray-600 hover:text-black hover:bg-gray-100'
                   }`}
                 >
                   ABOUT ME
                 </button>
                 <button
                   onClick={() => handleTabClick('product')}
-                  className={`px-3 py-3 text-xs font-semibold tracking-wider transition-all text-center ${
+                  className={`px-4 py-2 text-sm font-medium transition-all rounded-lg ${
                     activeTab === 'product' 
-                      ? 'bg-black text-white rounded-lg' 
-                      : 'text-gray-600 hover:text-black hover:bg-gray-100 rounded-lg'
+                      ? 'bg-black text-white' 
+                      : 'text-gray-600 hover:text-black hover:bg-gray-100'
                   }`}
                 >
                   PRODUCT MANAGEMENT
                 </button>
                 <button
                   onClick={() => handleTabClick('program')}
-                  className={`px-3 py-3 text-xs font-semibold tracking-wider transition-all text-center ${
+                  className={`px-4 py-2 text-sm font-medium transition-all rounded-lg ${
                     activeTab === 'program' 
-                      ? 'bg-black text-white rounded-lg' 
-                      : 'text-gray-600 hover:text-black hover:bg-gray-100 rounded-lg'
+                      ? 'bg-black text-white' 
+                      : 'text-gray-600 hover:text-black hover:bg-gray-100'
                   }`}
                 >
                   PROGRAM MANAGER
                 </button>
                 <button
                   onClick={() => handleTabClick('developer')}
-                  className={`px-3 py-3 text-xs font-semibold tracking-wider transition-all text-center ${
+                  className={`px-4 py-2 text-sm font-medium transition-all rounded-lg ${
                     activeTab === 'developer' 
-                      ? 'bg-black text-white rounded-lg' 
-                      : 'text-gray-600 hover:text-black hover:bg-gray-100 rounded-lg'
+                      ? 'bg-black text-white' 
+                      : 'text-gray-600 hover:text-black hover:bg-gray-100'
                   }`}
                 >
                   DEVELOPER
                 </button>
                 <button
                   onClick={() => handleTabClick('hobbies')}
-                  className={`px-3 py-3 text-xs font-semibold tracking-wider transition-all text-center ${
+                  className={`px-4 py-2 text-sm font-medium transition-all rounded-lg ${
                     activeTab === 'hobbies' 
-                      ? 'bg-black text-white rounded-lg' 
-                      : 'text-gray-600 hover:text-black hover:bg-gray-100 rounded-lg'
+                      ? 'bg-black text-white' 
+                      : 'text-gray-600 hover:text-black hover:bg-gray-100'
                   }`}
                 >
                   HOBBIES
                 </button>
                 <button
                   onClick={() => handleTabClick('resume')}
-                  className="px-3 py-3 text-xs font-semibold tracking-wider transition-all text-center bg-orange-500 hover:bg-orange-600 text-white rounded-lg"
+                  className="px-4 py-2 text-sm font-medium transition-all rounded-lg bg-orange-500 hover:bg-orange-600 text-white"
                 >
                   RESUME
                 </button>
