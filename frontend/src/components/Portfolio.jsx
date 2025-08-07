@@ -155,43 +155,6 @@ const Portfolio = () => {
                 backgroundImage: `url('https://customer-assets.emergentagent.com/job_portfolio-bhuvana/artifacts/q03w0t9q_1619607869770.jpeg')`
               }}
             >
-              {/* Floating Navigation Tabs on top of image */}
-              <div className="absolute top-8 left-1/2 transform -translate-x-1/2">
-                <div className="bg-white bg-opacity-95 backdrop-blur-sm rounded-full px-6 py-2 shadow-lg border border-gray-100">
-                  <nav className="flex space-x-4 justify-center items-center whitespace-nowrap">
-                    <button
-                      onClick={() => setActiveProductSection('recent')}
-                      className={`px-3 py-1.5 text-xs font-medium transition-all rounded-full whitespace-nowrap ${
-                        activeProductSection === 'recent'
-                          ? 'bg-orange-500 text-white'
-                          : 'text-gray-600 hover:text-black hover:bg-gray-100'
-                      }`}
-                    >
-                      RECENT EXPERIENCE
-                    </button>
-                    <button
-                      onClick={() => setActiveProductSection('entrepreneurial')}
-                      className={`px-3 py-1.5 text-xs font-medium transition-all rounded-full whitespace-nowrap ${
-                        activeProductSection === 'entrepreneurial'
-                          ? 'bg-orange-500 text-white'
-                          : 'text-gray-600 hover:text-black hover:bg-gray-100'
-                      }`}
-                    >
-                      ENTREPRENEURIAL EXPERIENCE
-                    </button>
-                    <button
-                      onClick={() => setActiveProductSection('learning')}
-                      className={`px-3 py-1.5 text-xs font-medium transition-all rounded-full whitespace-nowrap ${
-                        activeProductSection === 'learning'
-                          ? 'bg-orange-500 text-white'
-                          : 'text-gray-600 hover:text-black hover:bg-gray-100'
-                      }`}
-                    >
-                      PRACTICE / LEARNING
-                    </button>
-                  </nav>
-                </div>
-              </div>
             </div>
 
             {/* CSPO Certification Badge - Full Width */}
