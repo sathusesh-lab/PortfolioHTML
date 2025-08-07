@@ -147,20 +147,20 @@ const Portfolio = () => {
                   </p>
                   <div className="flex space-x-4">
                     <a 
-                      href="https://customer-assets.emergentagent.com/job_portfolio-bhuvana/artifacts/3zyozx8a_Landing%20Page.pdf" 
+                      href="https://customer-assets.emergentagent.com/job_portfolio-bhuvana/artifacts/58x3qet3_Revolutionizing%20Math%20Education%20in%20India.pptx.pdf" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="inline-flex items-center bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-lg text-sm transition-colors"
                     >
-                      View Landing Design
+                      View Full Presentation
                     </a>
                     <a 
-                      href="https://customer-assets.emergentagent.com/job_portfolio-bhuvana/artifacts/58x3qet3_Revolutionizing%20Math%20Education%20in%20India.pptx.pdf" 
+                      href="https://customer-assets.emergentagent.com/job_portfolio-bhuvana/artifacts/3zyozx8a_Landing%20Page.pdf" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="inline-flex items-center border-2 border-purple-500 text-purple-600 hover:bg-purple-50 px-4 py-2 rounded-lg text-sm transition-colors"
                     >
-                      View Full Presentation
+                      View Landing Design
                     </a>
                   </div>
                 </div>
