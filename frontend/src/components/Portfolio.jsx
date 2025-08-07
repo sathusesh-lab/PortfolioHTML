@@ -90,73 +90,70 @@ const Portfolio = () => {
           <div className="absolute top-0 left-0 right-0 p-8">
             <div className="bg-white bg-opacity-95 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
               {/* Logo/Brand */}
-              <div className="flex items-center justify-between mb-8">
-                <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center">
-                    <span className="text-white text-lg font-bold">B</span>
-                  </div>
-                  <span className="text-xl font-light text-black">BHUVANESHWARI</span>
+              <div className="flex items-center space-x-3 mb-8">
+                <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center">
+                  <span className="text-white text-lg font-bold">B</span>
                 </div>
-                <Button 
-                  onClick={handleResumeDownload}
-                  className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-full text-sm"
-                >
-                  <Download className="w-4 h-4 mr-2" />
-                  Resume
-                </Button>
+                <span className="text-xl font-light text-black">BHUVANESHWARI</span>
               </div>
               
               {/* Navigation Tabs */}
-              <nav className="flex flex-wrap gap-2">
+              <nav className="grid grid-cols-6 gap-1">
                 <button
                   onClick={() => handleTabClick('about')}
-                  className={`px-4 py-2 text-sm font-medium rounded-lg transition-all ${
+                  className={`px-3 py-3 text-xs font-semibold tracking-wider transition-all text-center ${
                     activeTab === 'about' 
-                      ? 'bg-black text-white' 
-                      : 'text-gray-600 hover:text-black hover:bg-gray-100'
+                      ? 'bg-black text-white rounded-lg' 
+                      : 'text-gray-600 hover:text-black hover:bg-gray-100 rounded-lg'
                   }`}
                 >
                   ABOUT ME
                 </button>
                 <button
                   onClick={() => handleTabClick('product')}
-                  className={`px-4 py-2 text-sm font-medium rounded-lg transition-all ${
+                  className={`px-3 py-3 text-xs font-semibold tracking-wider transition-all text-center ${
                     activeTab === 'product' 
-                      ? 'bg-black text-white' 
-                      : 'text-gray-600 hover:text-black hover:bg-gray-100'
+                      ? 'bg-black text-white rounded-lg' 
+                      : 'text-gray-600 hover:text-black hover:bg-gray-100 rounded-lg'
                   }`}
                 >
                   PRODUCT MANAGEMENT
                 </button>
                 <button
                   onClick={() => handleTabClick('program')}
-                  className={`px-4 py-2 text-sm font-medium rounded-lg transition-all ${
+                  className={`px-3 py-3 text-xs font-semibold tracking-wider transition-all text-center ${
                     activeTab === 'program' 
-                      ? 'bg-black text-white' 
-                      : 'text-gray-600 hover:text-black hover:bg-gray-100'
+                      ? 'bg-black text-white rounded-lg' 
+                      : 'text-gray-600 hover:text-black hover:bg-gray-100 rounded-lg'
                   }`}
                 >
                   PROGRAM MANAGER
                 </button>
                 <button
                   onClick={() => handleTabClick('developer')}
-                  className={`px-4 py-2 text-sm font-medium rounded-lg transition-all ${
+                  className={`px-3 py-3 text-xs font-semibold tracking-wider transition-all text-center ${
                     activeTab === 'developer' 
-                      ? 'bg-black text-white' 
-                      : 'text-gray-600 hover:text-black hover:bg-gray-100'
+                      ? 'bg-black text-white rounded-lg' 
+                      : 'text-gray-600 hover:text-black hover:bg-gray-100 rounded-lg'
                   }`}
                 >
                   DEVELOPER
                 </button>
                 <button
                   onClick={() => handleTabClick('hobbies')}
-                  className={`px-4 py-2 text-sm font-medium rounded-lg transition-all ${
+                  className={`px-3 py-3 text-xs font-semibold tracking-wider transition-all text-center ${
                     activeTab === 'hobbies' 
-                      ? 'bg-black text-white' 
-                      : 'text-gray-600 hover:text-black hover:bg-gray-100'
+                      ? 'bg-black text-white rounded-lg' 
+                      : 'text-gray-600 hover:text-black hover:bg-gray-100 rounded-lg'
                   }`}
                 >
                   HOBBIES
+                </button>
+                <button
+                  onClick={() => handleTabClick('resume')}
+                  className="px-3 py-3 text-xs font-semibold tracking-wider transition-all text-center bg-orange-500 hover:bg-orange-600 text-white rounded-lg"
+                >
+                  RESUME
                 </button>
               </nav>
             </div>
