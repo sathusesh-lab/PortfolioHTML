@@ -99,7 +99,7 @@ const Portfolio = () => {
                   : 'text-gray-600 hover:text-black hover:bg-gray-100'
               }`}
             >
-              PROGRAM MANAGER
+              PROGRAM MANAGEMENT
             </button>
             <button
               onClick={() => handleTabClick('developer')}
@@ -109,7 +109,7 @@ const Portfolio = () => {
                   : 'text-gray-600 hover:text-black hover:bg-gray-100'
               }`}
             >
-              DEVELOPER
+              DEVELOPMENT EXPERIENCE
             </button>
             <button
               onClick={() => handleTabClick('hobbies')}
