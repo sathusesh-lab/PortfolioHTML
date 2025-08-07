@@ -205,7 +205,7 @@ const Portfolio = () => {
                     A modern attendance tracking application designed to streamline attendance management through 
                     intuitive UI/UX design, featuring real-time tracking, analytics, and seamless user experience.
                   </p>
-                  <div className="flex space-x-4">
+                  <div className="flex flex-wrap gap-3">
                     <a 
                       href="https://customer-assets.emergentagent.com/job_portfolio-bhuvana/artifacts/uxhim69l_Presence%20Attendance%20App%20-%20UX_UI.pdf" 
                       target="_blank" 
@@ -221,6 +221,14 @@ const Portfolio = () => {
                       className="inline-flex items-center border-2 border-blue-500 text-blue-600 hover:bg-blue-50 px-4 py-2 rounded-lg text-sm transition-colors"
                     >
                       View Figma Design
+                    </a>
+                    <a 
+                      href="https://github.com/sathusesh-lab/Presence" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center bg-gray-800 hover:bg-gray-900 text-white px-4 py-2 rounded-lg text-sm transition-colors"
+                    >
+                      View Code
                     </a>
                   </div>
                 </div>
