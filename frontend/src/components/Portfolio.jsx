@@ -205,11 +205,6 @@ const Portfolio = () => {
                 <span className="text-sm font-medium">Bengaluru, India</span>
               </div>
             </div>
-
-            {/* Tab Content */}
-            <div className="mt-12 p-6 bg-gray-50 rounded-xl">
-              {renderTabContent()}
-            </div>
           </div>
         </div>
       </div>
