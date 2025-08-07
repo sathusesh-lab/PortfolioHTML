@@ -148,33 +148,30 @@ const Portfolio = () => {
       case 'product':
         return (
           <div className="w-full min-h-screen relative">
-            {/* Pure Background Image at Top */}
+            {/* Pure Background Image at Top - Moved down 10px */}
             <div 
-              className="w-full h-80 bg-cover bg-center relative"
+              className="w-full h-64 bg-cover bg-center relative mt-2.5"
               style={{
                 backgroundImage: `url('https://customer-assets.emergentagent.com/job_portfolio-bhuvana/artifacts/q03w0t9q_1619607869770.jpeg')`
               }}
             >
-            </div>
-
-            {/* CSPO Certification Badge - Full Width */}
-            <div className="w-full bg-gray-50 py-8">
-              <div className="flex justify-center">
+              {/* CSPO Certification Badge - Positioned at Right End */}
+              <div className="absolute top-4 right-8">
                 <a 
                   href="https://bcert.me/sxkvkhwur" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-block hover:scale-105 transition-transform duration-300"
                 >
-                  <div className="flex items-center bg-white border-2 border-orange-500 rounded-lg p-4 shadow-lg hover:shadow-xl">
+                  <div className="flex items-center bg-white border-2 border-orange-500 rounded-lg p-3 shadow-lg hover:shadow-xl">
                     <img 
                       src="https://customer-assets.emergentagent.com/job_portfolio-bhuvana/artifacts/92g8efi6_badge-7224%20%282%29.png" 
                       alt="CSPO Certification" 
-                      className="w-16 h-16 mr-4"
+                      className="w-12 h-12 mr-3"
                     />
                     <div>
-                      <h3 className="font-semibold text-gray-800">Certified Scrum Product Owner</h3>
-                      <p className="text-sm text-gray-600">Scrum Alliance Certification</p>
+                      <h3 className="font-semibold text-gray-800 text-sm">Certified Scrum Product Owner</h3>
+                      <p className="text-xs text-gray-600">Scrum Alliance Certification</p>
                       <p className="text-xs text-orange-500 mt-1">Click to verify →</p>
                     </div>
                   </div>
@@ -182,18 +179,18 @@ const Portfolio = () => {
               </div>
             </div>
 
-            {/* Main Content - Full Width */}
+            {/* Main Content - Condensed Layout */}
             <div className="w-full bg-white">
-              <div className="flex px-8 py-8">
+              <div className="flex px-8 py-4">
                 
                 {/* Left Sidebar Navigation */}
-                <div className="w-1/4 pr-8">
-                  <div className="bg-gray-50 rounded-xl p-6 sticky top-24">
-                    <h3 className="text-lg font-medium text-black mb-6">Product Management</h3>
-                    <nav className="space-y-3">
+                <div className="w-1/4 pr-6">
+                  <div className="bg-gray-50 rounded-xl p-4 sticky top-24">
+                    <h3 className="text-base font-medium text-black mb-4">Product Management</h3>
+                    <nav className="space-y-2">
                       <button
                         onClick={() => setActiveProductSection('recent')}
-                        className={`w-full text-left px-4 py-3 rounded-lg transition-all text-sm ${
+                        className={`w-full text-left px-3 py-2 rounded-lg transition-all text-sm ${
                           activeProductSection === 'recent'
                             ? 'bg-orange-500 text-white shadow-md'
                             : 'text-gray-600 hover:text-black hover:bg-white hover:shadow-sm'
@@ -203,7 +200,7 @@ const Portfolio = () => {
                       </button>
                       <button
                         onClick={() => setActiveProductSection('entrepreneurial')}
-                        className={`w-full text-left px-4 py-3 rounded-lg transition-all text-sm ${
+                        className={`w-full text-left px-3 py-2 rounded-lg transition-all text-sm ${
                           activeProductSection === 'entrepreneurial'
                             ? 'bg-orange-500 text-white shadow-md'
                             : 'text-gray-600 hover:text-black hover:bg-white hover:shadow-sm'
@@ -213,7 +210,7 @@ const Portfolio = () => {
                       </button>
                       <button
                         onClick={() => setActiveProductSection('learning')}
-                        className={`w-full text-left px-4 py-3 rounded-lg transition-all text-sm ${
+                        className={`w-full text-left px-3 py-2 rounded-lg transition-all text-sm ${
                           activeProductSection === 'learning'
                             ? 'bg-orange-500 text-white shadow-md'
                             : 'text-gray-600 hover:text-black hover:bg-white hover:shadow-sm'
@@ -226,7 +223,7 @@ const Portfolio = () => {
                 </div>
 
                 {/* Right Content Area */}
-                <div className="w-3/4 pl-8">
+                <div className="w-3/4 pl-6">
                   {renderProductManagementContent()}
                 </div>
               </div>
