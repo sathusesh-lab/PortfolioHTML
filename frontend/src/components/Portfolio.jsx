@@ -23,13 +23,23 @@ const Portfolio = () => {
     switch(activeTab) {
       case 'about':
         return (
-          <div className="space-y-8">
-            {tabsData.aboutMe.content.map((item, index) => (
-              <div key={index}>
-                <h3 className="text-xl font-medium text-black mb-3">{item.section}</h3>
-                <p className="text-gray-600 leading-relaxed text-base">{item.text}</p>
-              </div>
-            ))}
+          <div className="space-y-6">
+            <p className="text-gray-600 leading-relaxed text-base">
+              With 16+ years in the software industry, I've dedicated my career to strategizing 
+              products and services that make a real impact. My experience spans across E-Commerce, 
+              BFSI, Automobile, and various other verticals, always with customer-centric objectives 
+              at the forefront.
+            </p>
+            <p className="text-gray-600 leading-relaxed text-base">
+              Over 6 years in managerial roles have taught me the importance of strategic thinking 
+              and team collaboration. I believe in empowering teams to create exceptional products 
+              that users love.
+            </p>
+            <p className="text-gray-600 leading-relaxed text-base">
+              I am driven by the joy of creation. Whether it's a new product feature, a strategic 
+              framework, or an innovative solution, I find deep satisfaction in building and 
+              shipping things that matter.
+            </p>
           </div>
         );
       case 'product':
