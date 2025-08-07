@@ -12,7 +12,7 @@ export const profileData = {
     location: "Bengaluru, India"
   },
   resumeUrl: "https://customer-assets.emergentagent.com/job_e3d9c2de-a5f3-4f02-94a4-2681040b6140/artifacts/04hrjfl3_Bhuvaneshwari%20Seshachalam%20SrPM.pdf",
-  profileImage: "https://images.unsplash.com/photo-1494790108755-2616c6c7bebe?w=800&h=1000&fit=crop&crop=face"
+  profileImage: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&h=1000&fit=crop&crop=face"
 };
 
 export const tabsData = {
