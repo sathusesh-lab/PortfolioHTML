@@ -28,49 +28,74 @@ const Portfolio = () => {
             <h2 className="text-3xl font-light text-black mb-8">Recent Experience</h2>
             
             {/* Capillary Technologies */}
-            <div className="border-l-4 border-orange-500 pl-6 mb-8">
-              <div className="mb-4">
-                <h3 className="text-xl font-semibold text-black">Capillary Technologies</h3>
-                <div className="flex justify-between items-center mb-2">
-                  <span className="text-orange-500 font-medium">Senior Product Manager</span>
-                  <span className="text-gray-500 text-sm">October 2024 - Present</span>
+            <div className="bg-gradient-to-r from-orange-50 to-white border border-orange-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
+                <div className="mb-4 sm:mb-0">
+                  <h3 className="text-xl font-semibold text-black">Capillary Technologies</h3>
+                  <span className="text-orange-600 font-medium text-lg">Senior Product Manager</span>
+                  <p className="text-gray-500 text-sm mt-1">Bengaluru</p>
                 </div>
-                <span className="text-gray-500 text-sm">Bengaluru</span>
+                <div className="bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                  October 2024 - Present
+                </div>
               </div>
-              <p className="text-gray-600 leading-relaxed mb-4">
-                As a Senior Product Manager, collaborated with senior Architects to solve organization wide time zone standardization project and streamlined cross-region operations by correcting ingestion, processing and reporting across platforms.
-              </p>
-              <div className="bg-green-50 border-l-4 border-green-500 pl-4 py-3 rounded-r">
-                <p className="text-gray-700 font-medium">Key Impact:</p>
-                <p className="text-gray-600">
-                  This improved data integrity and customer trust across time sensitive workflows by reduced defects and operational escalations from time zone mismatches by <span className="font-semibold text-green-600">90%</span>.
+              
+              <div className="prose prose-gray max-w-none">
+                <p className="text-gray-700 leading-relaxed mb-4 text-base">
+                  As a Senior Product Manager, collaborated with senior Architects to solve organization wide time zone standardization project and streamlined cross-region operations by correcting ingestion, processing and reporting across platforms.
                 </p>
+                
+                <div className="bg-green-50 border-l-4 border-green-500 pl-6 py-4 rounded-r-lg">
+                  <div className="flex items-center mb-2">
+                    <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                    <p className="text-gray-800 font-semibold">Key Impact:</p>
+                  </div>
+                  <p className="text-gray-700">
+                    Improved data integrity and customer trust across time sensitive workflows by reducing defects and operational escalations from time zone mismatches by <span className="font-bold text-green-600 text-lg">90%</span>.
+                  </p>
+                </div>
               </div>
             </div>
 
             {/* Reward360 Global Services */}
-            <div className="border-l-4 border-orange-500 pl-6">
-              <div className="mb-4">
-                <h3 className="text-xl font-semibold text-black">Reward360 Global Services Pvt Ltd</h3>
-                <div className="flex justify-between items-center mb-2">
-                  <span className="text-orange-500 font-medium">Product Manager</span>
-                  <span className="text-gray-500 text-sm">January 2023 - April 2023</span>
+            <div className="bg-gradient-to-r from-blue-50 to-white border border-blue-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
+                <div className="mb-4 sm:mb-0">
+                  <h3 className="text-xl font-semibold text-black">Reward360 Global Services Pvt Ltd</h3>
+                  <span className="text-blue-600 font-medium text-lg">Product Manager</span>
+                  <p className="text-gray-500 text-sm mt-1">Bengaluru</p>
                 </div>
-                <span className="text-gray-500 text-sm">Bengaluru</span>
+                <div className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                  January 2023 - April 2023
+                </div>
               </div>
-              <div className="space-y-4">
-                <p className="text-gray-600 leading-relaxed">
+              
+              <div className="prose prose-gray max-w-none space-y-4">
+                <p className="text-gray-700 leading-relaxed">
                   Assessed and presented to the CEO - top 20 financial institutions competitive engagement trends and developed value prop, strategy, roadmap & requirements for an engaging product with deep dive into bin restrictions and smart redirection models.
                 </p>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-700 leading-relaxed">
                   Orchestrated end to end lifecycle of product for the largest bank in India – HDFC cascading brand specific changes to premium card holders in 6 microsites.
                 </p>
-                <div className="bg-blue-50 border-l-4 border-blue-500 pl-4 py-3 rounded-r">
-                  <p className="text-gray-700 font-medium mb-2">Key Outcomes:</p>
-                  <ul className="text-gray-600 space-y-1">
-                    <li>• Reduced page load time by <span className="font-semibold text-blue-600">30%</span></li>
-                    <li>• Revolutionized the branding of 6 microsite based on most trending UI/UX changes and customer feedback</li>
-                    <li>• Increased customer retention by <span className="font-semibold text-blue-600">42%</span></li>
+                
+                <div className="bg-blue-50 border-l-4 border-blue-500 pl-6 py-4 rounded-r-lg">
+                  <div className="flex items-center mb-3">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
+                    <p className="text-gray-800 font-semibold">Key Outcomes:</p>
+                  </div>
+                  <ul className="space-y-2 text-gray-700">
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-blue-400 rounded-full mr-3 flex-shrink-0"></span>
+                      Reduced page load time by <span className="font-bold text-blue-600 text-lg">30%</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 bg-blue-400 rounded-full mr-3 flex-shrink-0 mt-2"></span>
+                      <span>Revolutionized the branding of 6 microsite based on most trending UI/UX changes and customer feedback</span>
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-blue-400 rounded-full mr-3 flex-shrink-0"></span>
+                      Increased customer retention by <span className="font-bold text-blue-600 text-lg">42%</span>
+                    </li>
                   </ul>
                 </div>
               </div>
