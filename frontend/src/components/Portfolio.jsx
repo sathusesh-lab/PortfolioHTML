@@ -67,14 +67,14 @@ const Portfolio = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       
-      {/* Top Navigation Tabs - Oval Shape, Lower Position */}
+      {/* Top Navigation Tabs - Oval Shape, Lower Position, Thin Design */}
       <div className="relative">
         <div className="absolute top-4 left-1/2 transform -translate-x-1/2 z-50">
-          <div className="bg-white bg-opacity-95 backdrop-blur-sm rounded-full px-8 py-4 shadow-lg border border-gray-100">
-            <nav className="flex space-x-6 justify-center">
+          <div className="bg-white bg-opacity-95 backdrop-blur-sm rounded-full px-6 py-2 shadow-lg border border-gray-100">
+            <nav className="flex space-x-4 justify-center items-center whitespace-nowrap">
               <button
                 onClick={() => handleTabClick('about')}
-                className={`px-4 py-2 text-sm font-medium transition-all rounded-full ${
+                className={`px-3 py-1.5 text-xs font-medium transition-all rounded-full whitespace-nowrap ${
                   activeTab === 'about' 
                     ? 'bg-black text-white' 
                     : 'text-gray-600 hover:text-black hover:bg-gray-100'
@@ -84,7 +84,7 @@ const Portfolio = () => {
               </button>
               <button
                 onClick={() => handleTabClick('product')}
-                className={`px-4 py-2 text-sm font-medium transition-all rounded-full ${
+                className={`px-3 py-1.5 text-xs font-medium transition-all rounded-full whitespace-nowrap ${
                   activeTab === 'product' 
                     ? 'bg-black text-white' 
                     : 'text-gray-600 hover:text-black hover:bg-gray-100'
@@ -94,7 +94,7 @@ const Portfolio = () => {
               </button>
               <button
                 onClick={() => handleTabClick('program')}
-                className={`px-4 py-2 text-sm font-medium transition-all rounded-full ${
+                className={`px-3 py-1.5 text-xs font-medium transition-all rounded-full whitespace-nowrap ${
                   activeTab === 'program' 
                     ? 'bg-black text-white' 
                     : 'text-gray-600 hover:text-black hover:bg-gray-100'
@@ -104,7 +104,7 @@ const Portfolio = () => {
               </button>
               <button
                 onClick={() => handleTabClick('developer')}
-                className={`px-4 py-2 text-sm font-medium transition-all rounded-full ${
+                className={`px-3 py-1.5 text-xs font-medium transition-all rounded-full whitespace-nowrap ${
                   activeTab === 'developer' 
                     ? 'bg-black text-white' 
                     : 'text-gray-600 hover:text-black hover:bg-gray-100'
@@ -114,7 +114,7 @@ const Portfolio = () => {
               </button>
               <button
                 onClick={() => handleTabClick('hobbies')}
-                className={`px-4 py-2 text-sm font-medium transition-all rounded-full ${
+                className={`px-3 py-1.5 text-xs font-medium transition-all rounded-full whitespace-nowrap ${
                   activeTab === 'hobbies' 
                     ? 'bg-black text-white' 
                     : 'text-gray-600 hover:text-black hover:bg-gray-100'
@@ -124,7 +124,7 @@ const Portfolio = () => {
               </button>
               <button
                 onClick={() => handleTabClick('resume')}
-                className="px-4 py-2 text-sm font-medium transition-all rounded-full bg-orange-500 hover:bg-orange-600 text-white"
+                className="px-3 py-1.5 text-xs font-medium transition-all rounded-full bg-orange-500 hover:bg-orange-600 text-white whitespace-nowrap"
               >
                 RESUME
               </button>
