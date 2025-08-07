@@ -133,92 +133,82 @@ const Portfolio = () => {
         );
       case 'product':
         return (
-          <div className="w-full">
-            {/* Hero Section with Background Image */}
+          <div className="w-full min-h-screen relative">
+            {/* Pure Background Image at Top */}
             <div 
-              className="relative h-64 mb-8 rounded-xl overflow-hidden bg-cover bg-center"
+              className="w-full h-80 bg-cover bg-center relative"
               style={{
-                backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://customer-assets.emergentagent.com/job_portfolio-bhuvana/artifacts/q03w0t9q_1619607869770.jpeg')`
+                backgroundImage: `url('https://customer-assets.emergentagent.com/job_portfolio-bhuvana/artifacts/q03w0t9q_1619607869770.jpeg')`
               }}
             >
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center text-white">
-                  <h1 className="text-4xl font-light mb-4">Product Management Excellence</h1>
-                  <p className="text-xl opacity-90">Driving Innovation Through Strategic Product Leadership</p>
-                </div>
-              </div>
-            </div>
-
-            {/* CSPO Certification Badge */}
-            <div className="mb-8 flex justify-center">
-              <a 
-                href="https://bcert.me/sxkvkhwur" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-block hover:scale-105 transition-transform duration-300"
-              >
-                <div className="flex items-center bg-white border-2 border-orange-500 rounded-lg p-4 shadow-lg hover:shadow-xl">
-                  <img 
-                    src="https://customer-assets.emergentagent.com/job_portfolio-bhuvana/artifacts/92g8efi6_badge-7224%20%282%29.png" 
-                    alt="CSPO Certification" 
-                    className="w-16 h-16 mr-4"
-                  />
-                  <div>
-                    <h3 className="font-semibold text-gray-800">Certified Scrum Product Owner</h3>
-                    <p className="text-sm text-gray-600">Scrum Alliance Certification</p>
-                    <p className="text-xs text-orange-500 mt-1">Click to verify →</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            {/* Main Content with Responsive Layout */}
-            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-              
-              {/* Left Sidebar Navigation - Responsive */}
-              <div className="lg:col-span-1">
-                <div className="bg-gray-50 rounded-xl p-6 sticky top-24">
-                  <h3 className="text-lg font-medium text-black mb-6">Product Management</h3>
-                  <nav className="space-y-3">
+              {/* Floating Navigation Tabs on top of image */}
+              <div className="absolute top-8 left-1/2 transform -translate-x-1/2">
+                <div className="bg-white bg-opacity-95 backdrop-blur-sm rounded-full px-6 py-2 shadow-lg border border-gray-100">
+                  <nav className="flex space-x-4 justify-center items-center whitespace-nowrap">
                     <button
                       onClick={() => setActiveProductSection('recent')}
-                      className={`w-full text-left px-4 py-3 rounded-lg transition-all text-sm ${
+                      className={`px-3 py-1.5 text-xs font-medium transition-all rounded-full whitespace-nowrap ${
                         activeProductSection === 'recent'
-                          ? 'bg-orange-500 text-white shadow-md'
-                          : 'text-gray-600 hover:text-black hover:bg-white hover:shadow-sm'
+                          ? 'bg-orange-500 text-white'
+                          : 'text-gray-600 hover:text-black hover:bg-gray-100'
                       }`}
                     >
-                      Recent Experience
+                      RECENT EXPERIENCE
                     </button>
                     <button
                       onClick={() => setActiveProductSection('entrepreneurial')}
-                      className={`w-full text-left px-4 py-3 rounded-lg transition-all text-sm ${
+                      className={`px-3 py-1.5 text-xs font-medium transition-all rounded-full whitespace-nowrap ${
                         activeProductSection === 'entrepreneurial'
-                          ? 'bg-orange-500 text-white shadow-md'
-                          : 'text-gray-600 hover:text-black hover:bg-white hover:shadow-sm'
+                          ? 'bg-orange-500 text-white'
+                          : 'text-gray-600 hover:text-black hover:bg-gray-100'
                       }`}
                     >
-                      Entrepreneurial Experience
+                      ENTREPRENEURIAL EXPERIENCE
                     </button>
                     <button
                       onClick={() => setActiveProductSection('learning')}
-                      className={`w-full text-left px-4 py-3 rounded-lg transition-all text-sm ${
+                      className={`px-3 py-1.5 text-xs font-medium transition-all rounded-full whitespace-nowrap ${
                         activeProductSection === 'learning'
-                          ? 'bg-orange-500 text-white shadow-md'
-                          : 'text-gray-600 hover:text-black hover:bg-white hover:shadow-sm'
+                          ? 'bg-orange-500 text-white'
+                          : 'text-gray-600 hover:text-black hover:bg-gray-100'
                       }`}
                     >
-                      Practice / Learning
+                      PRACTICE / LEARNING
                     </button>
                   </nav>
                 </div>
               </div>
-              
-              {/* Right Content Area - Responsive */}
-              <div className="lg:col-span-3">
-                <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-                  {renderProductManagementContent()}
-                </div>
+            </div>
+
+            {/* CSPO Certification Badge - Full Width */}
+            <div className="w-full bg-gray-50 py-8">
+              <div className="flex justify-center">
+                <a 
+                  href="https://bcert.me/sxkvkhwur" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-block hover:scale-105 transition-transform duration-300"
+                >
+                  <div className="flex items-center bg-white border-2 border-orange-500 rounded-lg p-4 shadow-lg hover:shadow-xl">
+                    <img 
+                      src="https://customer-assets.emergentagent.com/job_portfolio-bhuvana/artifacts/92g8efi6_badge-7224%20%282%29.png" 
+                      alt="CSPO Certification" 
+                      className="w-16 h-16 mr-4"
+                    />
+                    <div>
+                      <h3 className="font-semibold text-gray-800">Certified Scrum Product Owner</h3>
+                      <p className="text-sm text-gray-600">Scrum Alliance Certification</p>
+                      <p className="text-xs text-orange-500 mt-1">Click to verify →</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            {/* Main Content - Full Width */}
+            <div className="w-full bg-white">
+              <div className="px-8 py-8">
+                {renderProductManagementContent()}
               </div>
             </div>
           </div>
