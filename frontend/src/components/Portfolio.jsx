@@ -38,7 +38,7 @@ const Portfolio = () => {
       case 'program':
         return (
           <div className="text-center py-12">
-            <h3 className="text-2xl font-light text-black mb-4">Program Manager</h3>
+            <h3 className="text-2xl font-light text-black mb-4">Program Management</h3>
             <p className="text-gray-500 mb-8">Coming soon...</p>
             <div className="w-24 h-1 bg-orange-500 mx-auto rounded"></div>
           </div>
@@ -46,7 +46,7 @@ const Portfolio = () => {
       case 'developer':
         return (
           <div className="text-center py-12">
-            <h3 className="text-2xl font-light text-black mb-4">Developer</h3>
+            <h3 className="text-2xl font-light text-black mb-4">Development Experience</h3>
             <p className="text-gray-500 mb-8">Coming soon...</p>
             <div className="w-24 h-1 bg-orange-500 mx-auto rounded"></div>
           </div>
