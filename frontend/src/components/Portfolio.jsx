@@ -207,20 +207,20 @@ const Portfolio = () => {
                   </p>
                   <div className="flex space-x-4">
                     <a 
-                      href="https://www.figma.com/design/o5yhPstdjDbHWIO0v7pH7X/Presence--Attendance-App-?node-id=0-1&t=k9QryJnjyY3BLakX-1" 
+                      href="https://customer-assets.emergentagent.com/job_portfolio-bhuvana/artifacts/uxhim69l_Presence%20Attendance%20App%20-%20UX_UI.pdf" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="inline-flex items-center bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm transition-colors"
                     >
-                      View Figma Design
+                      View Concept
                     </a>
                     <a 
-                      href="https://customer-assets.emergentagent.com/job_portfolio-bhuvana/artifacts/qls1v29e_Presence%20Attendance%20App%20-%20UX_UI.pdf" 
+                      href="https://www.figma.com/design/o5yhPstdjDbHWIO0v7pH7X/Presence--Attendance-App-?node-id=0-1&t=k9QryJnjyY3BLakX-1" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="inline-flex items-center border-2 border-blue-500 text-blue-600 hover:bg-blue-50 px-4 py-2 rounded-lg text-sm transition-colors"
                     >
-                      View UX/UI Documentation
+                      View Figma Design
                     </a>
                   </div>
                 </div>
