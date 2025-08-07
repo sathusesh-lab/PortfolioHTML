@@ -138,11 +138,11 @@ const Portfolio = () => {
         
         {/* Left Side - Profile Image Only - 30% */}
         <div className="w-[30%]">
-          <div className="h-screen">
+          <div className="h-screen flex items-start justify-center pt-16">
             <img 
               src={profileData.profileImage}
               alt="Bhuvaneshwari Seshachalam"
-              className="w-full h-full object-cover"
+              className="w-full h-[85%] object-cover object-top"
             />
           </div>
         </div>
