@@ -268,59 +268,61 @@ const Portfolio = () => {
         <div className="w-[60%] bg-white p-12 flex flex-col justify-center pt-32">
           <div className="max-w-4xl mx-auto">
             
-            {/* Hero Content */}
-            <div className="mb-12">
-              {/* Greeting */}
-              <h1 className="text-sm text-gray-400 mb-4 tracking-[0.2em] uppercase font-medium">
-                HELLO!
-              </h1>
-              
-              {/* Main Title - Smaller font to fit in one line */}
-              <h2 className="text-4xl lg:text-5xl font-light text-black mb-8 leading-tight">
-                I'm <span className="text-orange-500 font-normal">Bhuvaneshwari Seshachalam</span>
-              </h2>
-              
-              {/* Subtitle */}
-              <p className="text-xl text-gray-600 mb-6 font-light leading-relaxed">
-                {profileData.title}
-              </p>
-              
-              {/* Description */}
-              <p className="text-gray-600 mb-8 text-base leading-relaxed">
-                {profileData.intro}
-              </p>
-              
-              <p className="text-gray-600 mb-8 text-base leading-relaxed">
-                {profileData.experience}
-              </p>
+            {/* Show Home Content only for About Me tab */}
+            {activeTab === 'about' && (
+              <div className="mb-12">
+                {/* Greeting */}
+                <h1 className="text-sm text-gray-400 mb-4 tracking-[0.2em] uppercase font-medium">
+                  HELLO!
+                </h1>
+                
+                {/* Main Title */}
+                <h2 className="text-4xl lg:text-5xl font-light text-black mb-8 leading-tight">
+                  I'm <span className="text-orange-500 font-normal">Bhuvaneshwari Seshachalam</span>
+                </h2>
+                
+                {/* Subtitle */}
+                <p className="text-xl text-gray-600 mb-6 font-light leading-relaxed">
+                  {profileData.title}
+                </p>
+                
+                {/* Description */}
+                <p className="text-gray-600 mb-8 text-base leading-relaxed">
+                  {profileData.intro}
+                </p>
+                
+                <p className="text-gray-600 mb-8 text-base leading-relaxed">
+                  {profileData.experience}
+                </p>
 
-              {/* Contact Information */}
-              <div className="space-y-3">
-                <div className="flex items-center space-x-3 text-orange-500">
-                  <Phone className="w-4 h-4" />
-                  <span className="text-sm font-medium">{profileData.contact.phone}</span>
-                </div>
-                <div className="flex items-center space-x-3 text-orange-500">
-                  <Mail className="w-4 h-4" />
-                  <span className="text-sm font-medium">{profileData.contact.email}</span>
-                </div>
-                <div className="flex items-center space-x-3 text-orange-500">
-                  <Linkedin className="w-4 h-4" />
-                  <a href={profileData.contact.linkedin} target="_blank" rel="noopener noreferrer" 
-                     className="text-sm font-medium hover:underline">
-                    bhuvaneshwarisesha/
-                  </a>
-                </div>
-                <div className="flex items-center space-x-3 text-orange-500">
-                  <MapPin className="w-4 h-4" />
-                  <span className="text-sm font-medium">Bengaluru, India</span>
+                {/* Contact Information */}
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-3 text-orange-500">
+                    <Phone className="w-4 h-4" />
+                    <span className="text-sm font-medium">{profileData.contact.phone}</span>
+                  </div>
+                  <div className="flex items-center space-x-3 text-orange-500">
+                    <Mail className="w-4 h-4" />
+                    <span className="text-sm font-medium">{profileData.contact.email}</span>
+                  </div>
+                  <div className="flex items-center space-x-3 text-orange-500">
+                    <Linkedin className="w-4 h-4" />
+                    <a href={profileData.contact.linkedin} target="_blank" rel="noopener noreferrer" 
+                       className="text-sm font-medium hover:underline">
+                      bhuvaneshwarisesha/
+                    </a>
+                  </div>
+                  <div className="flex items-center space-x-3 text-orange-500">
+                    <MapPin className="w-4 h-4" />
+                    <span className="text-sm font-medium">Bengaluru, India</span>
+                  </div>
                 </div>
               </div>
-            </div>
+            )}
 
-            {/* Tab Content Area */}
+            {/* Tab Content Area for non-About tabs */}
             {activeTab !== 'about' && (
-              <div className="mt-12 bg-gray-50 rounded-xl p-8 min-h-[400px]">
+              <div className="w-full h-full">
                 {renderTabContent()}
               </div>
             )}
