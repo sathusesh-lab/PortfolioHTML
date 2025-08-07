@@ -129,10 +129,106 @@ const Portfolio = () => {
         );
       case 'learning':
         return (
-          <div className="text-center py-12">
-            <h2 className="text-3xl font-light text-black mb-8">Practice / Learning</h2>
-            <p className="text-gray-500 mb-8">Content coming soon...</p>
-            <div className="w-24 h-1 bg-orange-500 mx-auto rounded"></div>
+          <div className="space-y-6">
+            {/* Header */}
+            <div className="flex items-center justify-between mb-6">
+              <h2 className="text-2xl font-light text-black">Practice / Learning</h2>
+            </div>
+            
+            {/* EduSphere Project */}
+            <div className="bg-gradient-to-r from-purple-50 to-white border border-purple-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
+              <div className="flex items-start justify-between mb-4">
+                <div>
+                  <h3 className="text-xl font-semibold text-black mb-2">EduSphere</h3>
+                  <p className="text-purple-600 font-medium text-lg mb-2">Revolutionising Math Education in India</p>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                    A comprehensive educational platform designed to transform how mathematics is taught and learned across India, 
+                    focusing on interactive learning experiences and personalized education paths.
+                  </p>
+                  <div className="flex space-x-4">
+                    <a 
+                      href="https://customer-assets.emergentagent.com/job_portfolio-bhuvana/artifacts/3zyozx8a_Landing%20Page.pdf" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-lg text-sm transition-colors"
+                    >
+                      View Landing Design
+                    </a>
+                    <a 
+                      href="https://customer-assets.emergentagent.com/job_portfolio-bhuvana/artifacts/58x3qet3_Revolutionizing%20Math%20Education%20in%20India.pptx.pdf" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center border-2 border-purple-500 text-purple-600 hover:bg-purple-50 px-4 py-2 rounded-lg text-sm transition-colors"
+                    >
+                      View Full Presentation
+                    </a>
+                  </div>
+                </div>
+                <div className="bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-medium ml-4">
+                  Learning Project
+                </div>
+              </div>
+            </div>
+
+            {/* Empower Cards for Kids */}
+            <div className="bg-gradient-to-r from-green-50 to-white border border-green-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
+              <div className="flex items-start justify-between mb-4">
+                <div>
+                  <h3 className="text-xl font-semibold text-black mb-2">Empower Cards for Kids</h3>
+                  <p className="text-green-600 font-medium text-lg mb-2">Educational Card Game System</p>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                    An innovative card-based learning system designed to empower children through interactive play, 
+                    fostering creativity, critical thinking, and emotional intelligence through gamified learning experiences.
+                  </p>
+                  <a 
+                    href="https://customer-assets.emergentagent.com/job_portfolio-bhuvana/artifacts/5g9zbj0h_Bhuvaneshwari%20Seshachalam%20-%20Empower%20Cards.pdf" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm transition-colors"
+                  >
+                    View Project Details
+                  </a>
+                </div>
+                <div className="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium ml-4">
+                  Learning Project
+                </div>
+              </div>
+            </div>
+
+            {/* Presence Attendance App */}
+            <div className="bg-gradient-to-r from-blue-50 to-white border border-blue-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
+              <div className="flex items-start justify-between mb-4">
+                <div>
+                  <h3 className="text-xl font-semibold text-black mb-2">Presence Attendance App</h3>
+                  <p className="text-blue-600 font-medium text-lg mb-2">Smart Attendance Management System</p>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                    A modern attendance tracking application designed to streamline attendance management through 
+                    intuitive UI/UX design, featuring real-time tracking, analytics, and seamless user experience.
+                  </p>
+                  <div className="flex space-x-4">
+                    <a 
+                      href="https://www.figma.com/design/o5yhPstdjDbHWIO0v7pH7X/Presence--Attendance-App-?node-id=0-1&t=k9QryJnjyY3BLakX-1" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm transition-colors"
+                    >
+                      View Figma Design
+                    </a>
+                    <a 
+                      href="https://customer-assets.emergentagent.com/job_portfolio-bhuvana/artifacts/qls1v29e_Presence%20Attendance%20App%20-%20UX_UI.pdf" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center border-2 border-blue-500 text-blue-600 hover:bg-blue-50 px-4 py-2 rounded-lg text-sm transition-colors"
+                    >
+                      View UX/UI Documentation
+                    </a>
+                  </div>
+                </div>
+                <div className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium ml-4">
+                  Learning Project
+                </div>
+              </div>
+            </div>
           </div>
         );
       default:
