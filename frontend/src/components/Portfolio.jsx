@@ -68,7 +68,14 @@ const Portfolio = () => {
             <div className="bg-gradient-to-r from-blue-50 to-white border border-blue-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
               <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
                 <div className="mb-4 sm:mb-0">
-                  <h3 className="text-xl font-semibold text-black">Reward360 Global Services Pvt Ltd</h3>
+                  <div className="flex items-center mb-3">
+                    <img 
+                      src="https://customer-assets.emergentagent.com/job_portfolio-bhuvana/artifacts/o7qryihr_reward360_logo.jpeg" 
+                      alt="Reward360 Logo" 
+                      className="w-12 h-12 rounded-lg mr-3 object-contain bg-white border border-gray-200"
+                    />
+                    <h3 className="text-xl font-semibold text-black">Reward360 Global Services Pvt Ltd</h3>
+                  </div>
                   <span className="text-blue-600 font-medium text-lg">Product Manager</span>
                   <p className="text-gray-500 text-sm mt-1">Bengaluru</p>
                 </div>
