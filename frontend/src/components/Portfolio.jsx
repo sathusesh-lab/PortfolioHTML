@@ -253,19 +253,21 @@ const Portfolio = () => {
       {/* Main Content Area */}
       <div className="flex min-h-screen">
         
-        {/* Left Side - Profile Image Only - 40% */}
-        <div className="w-[40%]">
-          <div className="h-screen">
-            <img 
-              src={profileData.profileImage}
-              alt="Bhuvaneshwari Seshachalam"
-              className="w-full h-full object-cover"
-            />
+        {/* Left Side - Profile Image Only - 40% - Only for About Me tab */}
+        {activeTab === 'about' && (
+          <div className="w-[40%]">
+            <div className="h-screen">
+              <img 
+                src={profileData.profileImage}
+                alt="Bhuvaneshwari Seshachalam"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
-        </div>
+        )}
 
-        {/* Right Side - Main Content - 60% */}
-        <div className="w-[60%] bg-white p-12 flex flex-col justify-center pt-32">
+        {/* Right Side - Main Content - 60% for About Me, 100% for other tabs */}
+        <div className={`${activeTab === 'about' ? 'w-[60%]' : 'w-full'} bg-white p-12 flex flex-col justify-center pt-32`}>
           <div className="max-w-4xl mx-auto">
             
             {/* Show Home Content only for About Me tab */}
