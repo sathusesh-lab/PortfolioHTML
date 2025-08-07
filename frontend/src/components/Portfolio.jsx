@@ -357,10 +357,62 @@ const Portfolio = () => {
         );
       case 'developer':
         return (
-          <div className="text-center py-12">
-            <h3 className="text-2xl font-light text-black mb-4">Development Experience</h3>
-            <p className="text-gray-500 mb-8">Coming soon...</p>
-            <div className="w-24 h-1 bg-orange-500 mx-auto rounded"></div>
+          <div className="space-y-6">
+            {/* Header */}
+            <div className="flex items-center justify-between mb-6">
+              <h2 className="text-2xl font-light text-black">Development Experience</h2>
+            </div>
+            
+            {/* Infosys Technologies Experience */}
+            <div className="bg-gradient-to-r from-indigo-50 to-white border border-indigo-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
+                <div className="mb-4 sm:mb-0">
+                  <h3 className="text-xl font-semibold text-black mb-2">Business Consultant for Boots The Chemist (UK)</h3>
+                  <div className="flex items-center mb-2">
+                    <span className="text-indigo-600 font-medium text-lg">Infosys Technologies Ltd</span>
+                  </div>
+                  <p className="text-gray-500 text-sm">Bengaluru</p>
+                </div>
+                <div className="bg-indigo-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                  July 2007 - October 2010
+                </div>
+              </div>
+              
+              <div className="prose prose-gray max-w-none space-y-4">
+                <p className="text-gray-700 leading-relaxed text-sm">
+                  Led a team of 5 through the complete SDLC while developing portlets in WebSphere Portal Server for a B2B application with features of single sign-on for multiple user roles.
+                </p>
+                
+                <div className="space-y-3">
+                  <div className="flex items-start">
+                    <span className="w-2 h-2 bg-indigo-500 rounded-full mr-3 flex-shrink-0 mt-2"></span>
+                    <p className="text-gray-700 text-sm">
+                      Mentored new hires in the project team and received <span className="font-semibold text-indigo-600">"Spot" award</span> for outstanding business analysis.
+                    </p>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="w-2 h-2 bg-indigo-500 rounded-full mr-3 flex-shrink-0 mt-2"></span>
+                    <p className="text-gray-700 text-sm">
+                      Involved in the monthly reporting activities which include trend/pattern analysis of incident.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="bg-indigo-50 border-l-4 border-indigo-500 pl-6 py-4 rounded-r-lg mt-4">
+                  <div className="flex items-center mb-3">
+                    <div className="w-2 h-2 bg-indigo-500 rounded-full mr-3"></div>
+                    <p className="text-gray-800 font-semibold text-sm">Tech Stack:</p>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {['Python', 'Java', 'J2EE', 'Hibernate', 'ATG E-commerce', 'Azure DevOps', 'IBM WebSphere Portal Server'].map((tech, index) => (
+                      <span key={index} className="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs font-medium">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         );
       case 'hobbies':
