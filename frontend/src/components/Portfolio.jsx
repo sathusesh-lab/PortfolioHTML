@@ -108,10 +108,48 @@ const Portfolio = () => {
         );
       case 'product':
         return (
-          <div className="text-center py-12">
-            <h3 className="text-2xl font-light text-black mb-4">Product Management</h3>
-            <p className="text-gray-500 mb-8">Coming soon...</p>
-            <div className="w-24 h-1 bg-orange-500 mx-auto rounded"></div>
+          <div className="flex h-full">
+            {/* Left Sidebar Navigation */}
+            <div className="w-1/3 pr-8 border-r border-gray-200">
+              <h3 className="text-lg font-medium text-black mb-6">Product Management</h3>
+              <nav className="space-y-2">
+                <button
+                  onClick={() => setActiveProductSection('recent')}
+                  className={`w-full text-left px-4 py-3 rounded-lg transition-all ${
+                    activeProductSection === 'recent'
+                      ? 'bg-orange-500 text-white'
+                      : 'text-gray-600 hover:text-black hover:bg-gray-100'
+                  }`}
+                >
+                  Recent Experience
+                </button>
+                <button
+                  onClick={() => setActiveProductSection('entrepreneurial')}
+                  className={`w-full text-left px-4 py-3 rounded-lg transition-all ${
+                    activeProductSection === 'entrepreneurial'
+                      ? 'bg-orange-500 text-white'
+                      : 'text-gray-600 hover:text-black hover:bg-gray-100'
+                  }`}
+                >
+                  Entrepreneurial Experience
+                </button>
+                <button
+                  onClick={() => setActiveProductSection('learning')}
+                  className={`w-full text-left px-4 py-3 rounded-lg transition-all ${
+                    activeProductSection === 'learning'
+                      ? 'bg-orange-500 text-white'
+                      : 'text-gray-600 hover:text-black hover:bg-gray-100'
+                  }`}
+                >
+                  Practice / Learning
+                </button>
+              </nav>
+            </div>
+            
+            {/* Right Content Area */}
+            <div className="w-2/3 pl-8">
+              {renderProductManagementContent()}
+            </div>
           </div>
         );
       case 'program':
