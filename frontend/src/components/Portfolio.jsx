@@ -69,7 +69,7 @@ const Portfolio = () => {
       
       {/* Top Navigation Tabs - Oval Shape, Lower Position, Thin Design */}
       <div className="relative">
-        <div className="absolute top-4 left-1/2 transform -translate-x-1/2 z-50">
+        <div className="absolute top-8 left-1/2 transform -translate-x-1/2 z-50">
           <div className="bg-white bg-opacity-95 backdrop-blur-sm rounded-full px-6 py-2 shadow-lg border border-gray-100">
             <nav className="flex space-x-4 justify-center items-center whitespace-nowrap">
               <button
