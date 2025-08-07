@@ -174,8 +174,8 @@ const Portfolio = () => {
             <div className="bg-gradient-to-r from-blue-50 to-white border border-blue-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
               <div className="flex items-start justify-between mb-4">
                 <div>
-                  <h3 className="text-xl font-semibold text-black mb-2">Presence Attendance App</h3>
-                  <p className="text-blue-600 font-medium text-lg mb-2">Smart Attendance Management System</p>
+                  <h3 className="text-xl font-semibold text-black mb-2">Presence</h3>
+                  <p className="text-blue-600 font-medium text-lg mb-2">Attendance App for Educational Institutions</p>
                   <p className="text-gray-600 text-sm leading-relaxed mb-4">
                     A modern attendance tracking application designed to streamline attendance management through 
                     intuitive UI/UX design, featuring real-time tracking, analytics, and seamless user experience.
@@ -213,24 +213,34 @@ const Portfolio = () => {
               </div>
             </div>
 
-            {/* Empower Cards for Kids */}
+            {/* Finance Management for Teenagers */}
             <div className="bg-gradient-to-r from-green-50 to-white border border-green-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
               <div className="flex items-start justify-between mb-4">
                 <div>
-                  <h3 className="text-xl font-semibold text-black mb-2">Empower Cards for Kids</h3>
-                  <p className="text-green-600 font-medium text-lg mb-2">Educational Card Game System</p>
+                  <h3 className="text-xl font-semibold text-black mb-2">Finance Management for Teenagers</h3>
+                  <p className="text-green-600 font-medium text-lg mb-2">Educational Financial Literacy System</p>
                   <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                    An innovative card-based learning system designed to empower children through interactive play, 
-                    fostering creativity, critical thinking, and emotional intelligence through gamified learning experiences.
+                    An innovative financial education system designed to empower teenagers with essential money management skills, 
+                    fostering financial literacy, budgeting awareness, and responsible spending habits through interactive learning experiences.
                   </p>
-                  <a 
-                    href="https://customer-assets.emergentagent.com/job_portfolio-bhuvana/artifacts/5g9zbj0h_Bhuvaneshwari%20Seshachalam%20-%20Empower%20Cards.pdf" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm transition-colors"
-                  >
-                    View Project Details
-                  </a>
+                  <div className="flex space-x-4">
+                    <a 
+                      href="https://customer-assets.emergentagent.com/job_portfolio-bhuvana/artifacts/5g9zbj0h_Bhuvaneshwari%20Seshachalam%20-%20Empower%20Cards.pdf" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm transition-colors"
+                    >
+                      Empower Cards
+                    </a>
+                    <a 
+                      href="https://customer-assets.emergentagent.com/job_portfolio-bhuvana/artifacts/8nteqpnl_Coinage.pptx.pdf" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center border-2 border-green-500 text-green-600 hover:bg-green-50 px-4 py-2 rounded-lg text-sm transition-colors"
+                    >
+                      Coinage
+                    </a>
+                  </div>
                 </div>
                 <div className="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium ml-4">
                   Learning Project
