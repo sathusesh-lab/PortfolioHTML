@@ -136,8 +136,8 @@ const Portfolio = () => {
       {/* Main Content Area */}
       <div className="flex min-h-screen">
         
-        {/* Left Side - Profile Image Only - 30% */}
-        <div className="w-[30%]">
+        {/* Left Side - Profile Image Only - 40% */}
+        <div className="w-[40%]">
           <div className="h-screen">
             <img 
               src={profileData.profileImage}
@@ -147,8 +147,8 @@ const Portfolio = () => {
           </div>
         </div>
 
-        {/* Right Side - Main Content - 70% */}
-        <div className="w-[70%] bg-white p-12 flex flex-col justify-center pt-32">
+        {/* Right Side - Main Content - 60% */}
+        <div className="w-[60%] bg-white p-12 flex flex-col justify-center pt-32">
           <div className="max-w-4xl mx-auto">
             
             {/* Hero Content */}
