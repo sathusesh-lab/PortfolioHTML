@@ -148,7 +148,7 @@ const Portfolio = () => {
         </div>
 
         {/* Right Side - Main Content - 70% */}
-        <div className="w-[70%] bg-white p-12 flex flex-col justify-center pt-24">
+        <div className="w-[70%] bg-white p-12 flex flex-col justify-center pt-32">
           <div className="max-w-4xl mx-auto">
             
             {/* Hero Content */}
