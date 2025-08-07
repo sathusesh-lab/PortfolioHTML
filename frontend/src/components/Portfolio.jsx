@@ -170,31 +170,6 @@ const Portfolio = () => {
               </div>
             </div>
 
-            {/* Empower Cards for Kids */}
-            <div className="bg-gradient-to-r from-green-50 to-white border border-green-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
-              <div className="flex items-start justify-between mb-4">
-                <div>
-                  <h3 className="text-xl font-semibold text-black mb-2">Empower Cards for Kids</h3>
-                  <p className="text-green-600 font-medium text-lg mb-2">Educational Card Game System</p>
-                  <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                    An innovative card-based learning system designed to empower children through interactive play, 
-                    fostering creativity, critical thinking, and emotional intelligence through gamified learning experiences.
-                  </p>
-                  <a 
-                    href="https://customer-assets.emergentagent.com/job_portfolio-bhuvana/artifacts/5g9zbj0h_Bhuvaneshwari%20Seshachalam%20-%20Empower%20Cards.pdf" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm transition-colors"
-                  >
-                    View Project Details
-                  </a>
-                </div>
-                <div className="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium ml-4">
-                  Learning Project
-                </div>
-              </div>
-            </div>
-
             {/* Presence Attendance App */}
             <div className="bg-gradient-to-r from-blue-50 to-white border border-blue-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
               <div className="flex items-start justify-between mb-4">
@@ -226,13 +201,38 @@ const Portfolio = () => {
                       href="https://github.com/sathusesh-lab/Presence" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="inline-flex items-center bg-gray-800 hover:bg-gray-900 text-white px-4 py-2 rounded-lg text-sm transition-colors"
+                      className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm transition-colors"
                     >
                       View Code
                     </a>
                   </div>
                 </div>
                 <div className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium ml-4">
+                  Learning Project
+                </div>
+              </div>
+            </div>
+
+            {/* Empower Cards for Kids */}
+            <div className="bg-gradient-to-r from-green-50 to-white border border-green-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
+              <div className="flex items-start justify-between mb-4">
+                <div>
+                  <h3 className="text-xl font-semibold text-black mb-2">Empower Cards for Kids</h3>
+                  <p className="text-green-600 font-medium text-lg mb-2">Educational Card Game System</p>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                    An innovative card-based learning system designed to empower children through interactive play, 
+                    fostering creativity, critical thinking, and emotional intelligence through gamified learning experiences.
+                  </p>
+                  <a 
+                    href="https://customer-assets.emergentagent.com/job_portfolio-bhuvana/artifacts/5g9zbj0h_Bhuvaneshwari%20Seshachalam%20-%20Empower%20Cards.pdf" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm transition-colors"
+                  >
+                    View Project Details
+                  </a>
+                </div>
+                <div className="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium ml-4">
                   Learning Project
                 </div>
               </div>
