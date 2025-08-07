@@ -12,6 +12,10 @@ const Portfolio = () => {
   };
 
   const handleTabClick = (tabValue) => {
+    if (tabValue === 'resume') {
+      handleResumeDownload();
+      return;
+    }
     setActiveTab(tabValue);
   };
 
