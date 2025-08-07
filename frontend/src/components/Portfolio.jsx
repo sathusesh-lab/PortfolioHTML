@@ -317,6 +317,13 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
+
+            {/* Tab Content Area */}
+            {activeTab !== 'about' && (
+              <div className="mt-12 bg-gray-50 rounded-xl p-8 min-h-[400px]">
+                {renderTabContent()}
+              </div>
+            )}
           </div>
         </div>
       </div>
