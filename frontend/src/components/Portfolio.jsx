@@ -363,12 +363,52 @@ const Portfolio = () => {
               <h2 className="text-2xl font-light text-black">Development Experience</h2>
             </div>
             
+            {/* Sapient Experience */}
+            <div className="bg-gradient-to-r from-purple-50 to-white border border-purple-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
+                <div className="mb-4 sm:mb-0">
+                  <h3 className="text-xl font-semibold text-black mb-3">e-Commerce Specialist</h3>
+                  <div className="flex items-center mb-2">
+                    <img 
+                      src="https://customer-assets.emergentagent.com/job_portfolio-bhuvana/artifacts/rshsra0h_PS_Logo_RGB.svg%20%281%29.png" 
+                      alt="Sapient Logo" 
+                      className="w-12 h-12 rounded-lg mr-3 object-contain bg-white border border-gray-200"
+                    />
+                    <span className="text-purple-600 font-medium text-lg">Sapient</span>
+                  </div>
+                  <p className="text-gray-500 text-sm">Bengaluru Area, India</p>
+                </div>
+                <div className="bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                  Nov 2010 - Nov 2011 · 1 yr 1 mo
+                </div>
+              </div>
+              
+              <div className="prose prose-gray max-w-none space-y-4">
+                <p className="text-gray-700 leading-relaxed text-sm">
+                  Developed e-commerce applications for clients like JCPenney, Hyatt specializing in development of data analytic tools (Coremetrics) and in development of Products and Catalogs section in ATG e-commerce.
+                </p>
+                
+                <div className="bg-purple-50 border-l-4 border-purple-500 pl-6 py-4 rounded-r-lg">
+                  <div className="flex items-center mb-2">
+                    <div className="w-2 h-2 bg-purple-500 rounded-full mr-3"></div>
+                    <p className="text-gray-800 font-semibold text-sm">Key Focus:</p>
+                  </div>
+                  <p className="text-gray-700 text-sm">Product Lifecycle Management</p>
+                </div>
+              </div>
+            </div>
+            
             {/* Infosys Technologies Experience */}
             <div className="bg-gradient-to-r from-indigo-50 to-white border border-indigo-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
               <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
                 <div className="mb-4 sm:mb-0">
-                  <h3 className="text-xl font-semibold text-black mb-2">Business Consultant for Boots The Chemist (UK)</h3>
+                  <h3 className="text-xl font-semibold text-black mb-3">Business Consultant for Boots The Chemist (UK)</h3>
                   <div className="flex items-center mb-2">
+                    <img 
+                      src="https://customer-assets.emergentagent.com/job_portfolio-bhuvana/artifacts/1f6lvh58_Infosys_logo.svg%20%281%29.png" 
+                      alt="Infosys Logo" 
+                      className="w-12 h-12 rounded-lg mr-3 object-contain bg-white border border-gray-200"
+                    />
                     <span className="text-indigo-600 font-medium text-lg">Infosys Technologies Ltd</span>
                   </div>
                   <p className="text-gray-500 text-sm">Bengaluru</p>
