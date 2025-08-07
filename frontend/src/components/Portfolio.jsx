@@ -67,67 +67,69 @@ const Portfolio = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       
-      {/* Top Navigation Tabs - Full Width */}
-      <div className="bg-white border-b border-gray-200 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-8 py-4">
-          <nav className="flex space-x-8 justify-center">
-            <button
-              onClick={() => handleTabClick('about')}
-              className={`px-6 py-2 text-sm font-medium transition-all rounded-lg ${
-                activeTab === 'about' 
-                  ? 'bg-black text-white' 
-                  : 'text-gray-600 hover:text-black hover:bg-gray-100'
-              }`}
-            >
-              ABOUT ME
-            </button>
-            <button
-              onClick={() => handleTabClick('product')}
-              className={`px-6 py-2 text-sm font-medium transition-all rounded-lg ${
-                activeTab === 'product' 
-                  ? 'bg-black text-white' 
-                  : 'text-gray-600 hover:text-black hover:bg-gray-100'
-              }`}
-            >
-              PRODUCT MANAGEMENT
-            </button>
-            <button
-              onClick={() => handleTabClick('program')}
-              className={`px-6 py-2 text-sm font-medium transition-all rounded-lg ${
-                activeTab === 'program' 
-                  ? 'bg-black text-white' 
-                  : 'text-gray-600 hover:text-black hover:bg-gray-100'
-              }`}
-            >
-              PROGRAM MANAGEMENT
-            </button>
-            <button
-              onClick={() => handleTabClick('developer')}
-              className={`px-6 py-2 text-sm font-medium transition-all rounded-lg ${
-                activeTab === 'developer' 
-                  ? 'bg-black text-white' 
-                  : 'text-gray-600 hover:text-black hover:bg-gray-100'
-              }`}
-            >
-              DEVELOPMENT EXPERIENCE
-            </button>
-            <button
-              onClick={() => handleTabClick('hobbies')}
-              className={`px-6 py-2 text-sm font-medium transition-all rounded-lg ${
-                activeTab === 'hobbies' 
-                  ? 'bg-black text-white' 
-                  : 'text-gray-600 hover:text-black hover:bg-gray-100'
-              }`}
-            >
-              HOBBIES
-            </button>
-            <button
-              onClick={() => handleTabClick('resume')}
-              className="px-6 py-2 text-sm font-medium transition-all rounded-lg bg-orange-500 hover:bg-orange-600 text-white"
-            >
-              RESUME
-            </button>
-          </nav>
+      {/* Top Navigation Tabs - Oval Shape, Lower Position */}
+      <div className="relative">
+        <div className="absolute top-4 left-1/2 transform -translate-x-1/2 z-50">
+          <div className="bg-white bg-opacity-95 backdrop-blur-sm rounded-full px-8 py-4 shadow-lg border border-gray-100">
+            <nav className="flex space-x-6 justify-center">
+              <button
+                onClick={() => handleTabClick('about')}
+                className={`px-4 py-2 text-sm font-medium transition-all rounded-full ${
+                  activeTab === 'about' 
+                    ? 'bg-black text-white' 
+                    : 'text-gray-600 hover:text-black hover:bg-gray-100'
+                }`}
+              >
+                ABOUT ME
+              </button>
+              <button
+                onClick={() => handleTabClick('product')}
+                className={`px-4 py-2 text-sm font-medium transition-all rounded-full ${
+                  activeTab === 'product' 
+                    ? 'bg-black text-white' 
+                    : 'text-gray-600 hover:text-black hover:bg-gray-100'
+                }`}
+              >
+                PRODUCT MANAGEMENT
+              </button>
+              <button
+                onClick={() => handleTabClick('program')}
+                className={`px-4 py-2 text-sm font-medium transition-all rounded-full ${
+                  activeTab === 'program' 
+                    ? 'bg-black text-white' 
+                    : 'text-gray-600 hover:text-black hover:bg-gray-100'
+                }`}
+              >
+                PROGRAM MANAGEMENT
+              </button>
+              <button
+                onClick={() => handleTabClick('developer')}
+                className={`px-4 py-2 text-sm font-medium transition-all rounded-full ${
+                  activeTab === 'developer' 
+                    ? 'bg-black text-white' 
+                    : 'text-gray-600 hover:text-black hover:bg-gray-100'
+                }`}
+              >
+                DEVELOPMENT EXPERIENCE
+              </button>
+              <button
+                onClick={() => handleTabClick('hobbies')}
+                className={`px-4 py-2 text-sm font-medium transition-all rounded-full ${
+                  activeTab === 'hobbies' 
+                    ? 'bg-black text-white' 
+                    : 'text-gray-600 hover:text-black hover:bg-gray-100'
+                }`}
+              >
+                HOBBIES
+              </button>
+              <button
+                onClick={() => handleTabClick('resume')}
+                className="px-4 py-2 text-sm font-medium transition-all rounded-full bg-orange-500 hover:bg-orange-600 text-white"
+              >
+                RESUME
+              </button>
+            </nav>
+          </div>
         </div>
       </div>
 
