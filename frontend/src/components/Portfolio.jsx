@@ -152,7 +152,7 @@ const Portfolio = () => {
                       rel="noopener noreferrer"
                       className="inline-flex items-center bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-lg text-sm transition-colors"
                     >
-                      View Full Presentation
+                      View Concept
                     </a>
                     <a 
                       href="https://customer-assets.emergentagent.com/job_portfolio-bhuvana/artifacts/3zyozx8a_Landing%20Page.pdf" 
