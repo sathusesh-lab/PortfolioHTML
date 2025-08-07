@@ -338,8 +338,8 @@ const Portfolio = () => {
         )}
 
         {/* Right Side - Main Content - 60% for About Me, 100% for other tabs */}
-        <div className={`${activeTab === 'about' ? 'w-[60%]' : 'w-full'} bg-white p-12 flex flex-col justify-center pt-32`}>
-          <div className="max-w-4xl mx-auto">
+        <div className={`${activeTab === 'about' ? 'w-[60%]' : 'w-full'} bg-white ${activeTab === 'about' ? 'p-12' : 'p-0'} flex flex-col justify-center ${activeTab === 'about' ? 'pt-32' : 'pt-0'}`}>
+          <div className={`${activeTab === 'about' ? 'max-w-4xl mx-auto' : 'w-full'}`}>
             
             {/* Show Home Content only for About Me tab */}
             {activeTab === 'about' && (
