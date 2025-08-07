@@ -148,7 +148,7 @@ const Portfolio = () => {
         </div>
 
         {/* Right Side - Main Content - 70% */}
-        <div className="w-[70%] bg-white p-12 flex flex-col justify-center">
+        <div className="w-[70%] bg-white p-12 flex flex-col justify-center pt-24">
           <div className="max-w-4xl mx-auto">
             
             {/* Hero Content */}
@@ -158,8 +158,8 @@ const Portfolio = () => {
                 HELLO!
               </h1>
               
-              {/* Main Title */}
-              <h2 className="text-6xl font-light text-black mb-8 leading-tight">
+              {/* Main Title - Smaller font to fit in one line */}
+              <h2 className="text-4xl lg:text-5xl font-light text-black mb-8 leading-tight">
                 I'm <span className="text-orange-500 font-normal">Bhuvaneshwari Seshachalam</span>
               </h2>
               
@@ -191,10 +191,10 @@ const Portfolio = () => {
                   <Linkedin className="w-4 h-4" />
                   <a href={profileData.contact.linkedin} target="_blank" rel="noopener noreferrer" 
                      className="text-sm font-medium hover:underline">
-                    linkedin.com/in/bhuvaneshwarisesha/
+                    bhuvaneshwarisesha/
                   </a>
                 </div>
-                <div className="flex items-center space-x-3 text-gray-500">
+                <div className="flex items-center space-x-3 text-orange-500">
                   <MapPin className="w-4 h-4" />
                   <span className="text-sm font-medium">Bengaluru, India</span>
                 </div>
