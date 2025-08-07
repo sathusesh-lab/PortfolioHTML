@@ -24,22 +24,22 @@ const Portfolio = () => {
     switch(activeProductSection) {
       case 'recent':
         return (
-          <div className="space-y-8">
-            <h2 className="text-3xl font-light text-black mb-8">Recent Experience</h2>
+          <div className="space-y-6">
+            <h2 className="text-2xl font-light text-black mb-6">Recent Experience</h2>
             
             {/* Capillary Technologies */}
-            <div className="bg-gradient-to-r from-orange-50 to-white border border-orange-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
-              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
-                <div className="mb-4 sm:mb-0">
-                  <div className="flex items-center mb-3">
+            <div className="bg-gradient-to-r from-orange-50 to-white border border-orange-200 rounded-xl p-4 hover:shadow-lg transition-shadow">
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-3">
+                <div className="mb-3 sm:mb-0">
+                  <div className="flex items-center mb-2">
                     <img 
                       src="https://customer-assets.emergentagent.com/job_portfolio-bhuvana/artifacts/wru4c7hu_CapillaryLogo.jpg" 
                       alt="Capillary Technologies Logo" 
-                      className="w-12 h-12 rounded-lg mr-3 object-contain bg-white border border-gray-200"
+                      className="w-10 h-10 rounded-lg mr-3 object-contain bg-white border border-gray-200"
                     />
-                    <h3 className="text-xl font-semibold text-black">Capillary Technologies</h3>
+                    <h3 className="text-lg font-semibold text-black">Capillary Technologies</h3>
                   </div>
-                  <span className="text-orange-600 font-medium text-lg">Senior Product Manager</span>
+                  <span className="text-orange-600 font-medium">Senior Product Manager</span>
                   <p className="text-gray-500 text-sm mt-1">Bengaluru</p>
                 </div>
                 <div className="bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-medium">
@@ -48,35 +48,35 @@ const Portfolio = () => {
               </div>
               
               <div className="prose prose-gray max-w-none">
-                <p className="text-gray-700 leading-relaxed mb-4 text-base">
+                <p className="text-gray-700 leading-relaxed mb-3 text-sm">
                   As a Senior Product Manager, collaborated with senior Architects to solve organization wide time zone standardization project and streamlined cross-region operations by correcting ingestion, processing and reporting across platforms.
                 </p>
                 
-                <div className="bg-green-50 border-l-4 border-green-500 pl-6 py-4 rounded-r-lg">
+                <div className="bg-green-50 border-l-4 border-green-500 pl-4 py-3 rounded-r-lg">
                   <div className="flex items-center mb-2">
-                    <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                    <p className="text-gray-800 font-semibold">Key Impact:</p>
+                    <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+                    <p className="text-gray-800 font-semibold text-sm">Key Impact:</p>
                   </div>
-                  <p className="text-gray-700">
-                    Improved data integrity and customer trust across time sensitive workflows by reducing defects and operational escalations from time zone mismatches by <span className="font-bold text-green-600 text-lg">90%</span>.
+                  <p className="text-gray-700 text-sm">
+                    Improved data integrity and customer trust across time sensitive workflows by reducing defects and operational escalations from time zone mismatches by <span className="font-bold text-green-600">90%</span>.
                   </p>
                 </div>
               </div>
             </div>
 
             {/* Reward360 Global Services */}
-            <div className="bg-gradient-to-r from-blue-50 to-white border border-blue-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
-              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
-                <div className="mb-4 sm:mb-0">
-                  <div className="flex items-center mb-3">
+            <div className="bg-gradient-to-r from-blue-50 to-white border border-blue-200 rounded-xl p-4 hover:shadow-lg transition-shadow">
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-3">
+                <div className="mb-3 sm:mb-0">
+                  <div className="flex items-center mb-2">
                     <img 
                       src="https://customer-assets.emergentagent.com/job_portfolio-bhuvana/artifacts/o7qryihr_reward360_logo.jpeg" 
                       alt="Reward360 Logo" 
-                      className="w-12 h-12 rounded-lg mr-3 object-contain bg-white border border-gray-200"
+                      className="w-10 h-10 rounded-lg mr-3 object-contain bg-white border border-gray-200"
                     />
-                    <h3 className="text-xl font-semibold text-black">Reward360 Global Services Pvt Ltd</h3>
+                    <h3 className="text-lg font-semibold text-black">Reward360 Global Services Pvt Ltd</h3>
                   </div>
-                  <span className="text-blue-600 font-medium text-lg">Product Manager</span>
+                  <span className="text-blue-600 font-medium">Product Manager</span>
                   <p className="text-gray-500 text-sm mt-1">Bengaluru</p>
                 </div>
                 <div className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium">
@@ -84,31 +84,31 @@ const Portfolio = () => {
                 </div>
               </div>
               
-              <div className="prose prose-gray max-w-none space-y-4">
-                <p className="text-gray-700 leading-relaxed">
+              <div className="prose prose-gray max-w-none space-y-3">
+                <p className="text-gray-700 leading-relaxed text-sm">
                   Assessed and presented to the CEO - top 20 financial institutions competitive engagement trends and developed value prop, strategy, roadmap & requirements for an engaging product with deep dive into bin restrictions and smart redirection models.
                 </p>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-gray-700 leading-relaxed text-sm">
                   Orchestrated end to end lifecycle of product for the largest bank in India – HDFC cascading brand specific changes to premium card holders in 6 microsites.
                 </p>
                 
-                <div className="bg-blue-50 border-l-4 border-blue-500 pl-6 py-4 rounded-r-lg">
-                  <div className="flex items-center mb-3">
-                    <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
-                    <p className="text-gray-800 font-semibold">Key Outcomes:</p>
+                <div className="bg-blue-50 border-l-4 border-blue-500 pl-4 py-3 rounded-r-lg">
+                  <div className="flex items-center mb-2">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>
+                    <p className="text-gray-800 font-semibold text-sm">Key Outcomes:</p>
                   </div>
-                  <ul className="space-y-2 text-gray-700">
+                  <ul className="space-y-1 text-gray-700 text-sm">
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-blue-400 rounded-full mr-3 flex-shrink-0"></span>
-                      Reduced page load time by <span className="font-bold text-blue-600 text-lg">30%</span>
+                      <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2 flex-shrink-0"></span>
+                      Reduced page load time by <span className="font-bold text-blue-600">30%</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-blue-400 rounded-full mr-3 flex-shrink-0 mt-2"></span>
+                      <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2 flex-shrink-0 mt-1.5"></span>
                       <span>Revolutionized the branding of 6 microsite based on most trending UI/UX changes and customer feedback</span>
                     </li>
                     <li className="flex items-center">
-                      <span className="w-2 h-2 bg-blue-400 rounded-full mr-3 flex-shrink-0"></span>
-                      Increased customer retention by <span className="font-bold text-blue-600 text-lg">42%</span>
+                      <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2 flex-shrink-0"></span>
+                      Increased customer retention by <span className="font-bold text-blue-600">42%</span>
                     </li>
                   </ul>
                 </div>
